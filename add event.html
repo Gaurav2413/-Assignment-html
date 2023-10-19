@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+    <input type="text" id="text" value="">
+    <input type="submit" value="add" id="b1" onclick="return add()">
+    <input type="submit" value="show" id="b2" onclick="return show()">
+    <p id="baba"></p>
+    </form>
+
+    <script>
+       
+    var inp = document.getElementById("text");
+    var  para = document.getElementById("baba")
+    
+    function  add()
+    {
+        alert(text.value); 
+        return false 
+    }
+
+    function show()
+    {
+    
+         para.innerHTML+=text.value + "<br> "
+         text.value=""
+        return false
+        
+    }
+
+    </script>
+    
+</body>
+</html>
