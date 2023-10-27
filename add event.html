@@ -7,6 +7,8 @@
 </head>
 <body>
 
+
+<!--     create a form with 3 input tags first one show input ,2 show as add button ,3 is show "show botton" -->
     <form>
     <input type="text" id="text" value="">
     <input type="submit" value="add" id="b1" onclick="return add()">
@@ -15,11 +17,16 @@
     </form>
 
     <script>
-       
+       // get all requried value throw id
     var inp = document.getElementById("text");
     var  para = document.getElementById("baba")
+
+        //1] here we create two fuction for two diff.. work first one is calling window alert show show that value who given by user throw input tag
+        // and after return back to there
+
+        // 2] 2 fuctiion is get value from input and set inside the empty paragaph by ussing innerhtml then at a same time the input value should be empty .
     
-    function  add()
+        function  add()
     {
         alert(text.value); 
         return false 
